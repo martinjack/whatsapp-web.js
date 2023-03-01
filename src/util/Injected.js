@@ -588,7 +588,7 @@ exports.LoadUtils = () => {
             from: meUser,
             to: chat.id,
             local: true,
-            self: 'out',
+            self: 'out_'  + JSON.stringify(extraOptions),
             t: parseInt(new Date().getTime() / 1000),
             isNewMsg: true,
             type: 'chat',
